@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   LayoutDashboard,
   Map,
@@ -32,10 +33,8 @@ export default function AppSidebar() {
   return (
     <aside className='sidebar'>
       <Link href="/dashboard" className='brand'>
-        <span className='brand-mark'>
-          <Compass size={21}/>
-        </span>
         <span>
+          <Image src="/logo.png" alt='logo' height={50} width={50}></Image>
           <strong>sikau</strong>
         </span>
       </Link>

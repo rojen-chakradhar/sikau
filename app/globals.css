@@ -199,3 +199,64 @@ h1, h2, h3, p {
     display: none;
   }
 }
+
+.icon-button {
+  height: 36px;
+  width: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.icon-button:hover {
+  background: var(--surface-muted);
+}
+
+.tip-card {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 15px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+}
+
+.tip-icon, .milestone-icon {
+  height: 35px;
+  width: 35px;
+  display: grid;
+  flex: 0 0 35px;
+  place-items: center;
+  border-radius: 10px;
+  color: var(--accent);
+  background: var(--surface);
+}
+
+.tip-card strong, .milestone-row strong {
+  font-size: 12px;
+}
+
+.tip-card p, .milestone-row p {
+  margin: 6px 0 0;
+  font-size: 12px;
+}
+
+.milestone-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.milestone-row > div:nth-child(2) {
+  flex: 1;
+}
+
+.milestone-flame {
+  color: #e69a45;
+}
